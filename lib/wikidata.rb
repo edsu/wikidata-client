@@ -32,6 +32,7 @@ end
 require 'wikidata/client'
 require 'wikidata/property'
 require 'wikidata/property/base'
+require 'wikidata/property/commonsmedia'
 require 'wikidata/property/string'
 require 'wikidata/property/time'
 require 'wikidata/property/url'

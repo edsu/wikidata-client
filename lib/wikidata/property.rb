@@ -11,10 +11,12 @@ module Wikidata
         Wikidata::Property::GlobeCoordinate.new attribute
       when 'url'
         Wikidata::Property::Url.new attribute
+      when 'commonsMedia'
+	Wikidata::Property::CommonsMedia.new attribute
       when 'wikibase-item'
         Wikidata::Item.find Wikidata::Entity.entity_id(attribute)
       else
-        puts "Unkown property type #{attribute.mainsnak.datatype}"
+        puts "Unknown property type #{attribute.mainsnak.datatype}"
       end
     end
   end
